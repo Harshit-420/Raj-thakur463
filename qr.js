@@ -1,5 +1,5 @@
 // get qr  code of any bot using this ....................
-//coded  by wasi
+//coded  by RAJ
 
 
 const express = require("express");
@@ -17,14 +17,14 @@ const { Boom } = require("@hapi/boom");
 const PORT = process.env.PORT ||  5000
 const MESSAGE = process.env.MESSAGE ||  `
 ┌───⭓『
-❒ *WASI-MD*
+❒ *RAJ-DT*
 ❒ _NOW DEPLOY IT_
 └────────────⭓
 ┌───⭓
 ❒  • Chat with owner •
-❒ *GitHub:* __https://github.com/WASI-MD_
-❒ *Author:* _wa.me/923192173398_
-❒ *YT:* _https://youtube.com/@wasitech10_
+❒ *GitHub:* _https://github.com/Harshit-420_
+❒ *Author:* _wa.me/919695003501_
+❒ *YT:* _https://www.youtube.com/@rajnath18911_
 └────────────⭓
 `
 
@@ -44,12 +44,12 @@ if (fs.existsSync('./auth_info_baileys')) {
   
   app.use("/", async(req, res) => {
 
-  const { default: WasiWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys");
+  const { default: RAJWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys");
   const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
-  async function WASI() {
+  async function RAJ() {
     const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys')
     try {
-      let Smd =WasiWASocket({ 
+      let Smd =RAJWASocket({ 
         printQRInTerminal: false,
         logger: pino({ level: "silent" }), 
         browser: [Browsers.Chrome, 'Windows 10', 'Chrome/89.0.4389.82'],
@@ -96,16 +96,16 @@ SESSION-ID ==> ${Scan_Id}
             // console.log("Reason : ",DisconnectReason[reason])
             if (reason === DisconnectReason.connectionClosed) {
               console.log("Connection closed!")
-             // WASI().catch(err => console.log(err));
+             // RAJ().catch(err => console.log(err));
             } else if (reason === DisconnectReason.connectionLost) {
                 console.log("Connection Lost from Server!")
-            //  WASI().catch(err => console.log(err));
+            //  RAJ().catch(err => console.log(err));
             } else if (reason === DisconnectReason.restartRequired) {
                 console.log("Restart Required, Restarting...")
-              WASI().catch(err => console.log(err));
+              RAJ().catch(err => console.log(err));
             } else if (reason === DisconnectReason.timedOut) {
                 console.log("Connection TimedOut!")
-             // WASI().catch(err => console.log(err));
+             // RAJ().catch(err => console.log(err));
             }  else {
                 console.log('Connection closed with bot. Please run again.');
                 console.log(reason)
@@ -129,12 +129,12 @@ SESSION-ID ==> ${Scan_Id}
 
 
 
-  WASI().catch(async(err) => {
+  RAJ().catch(async(err) => {
     console.log(err)
     await fs.emptyDirSync(__dirname+'/auth_info_baileys'); 
 
 
-    //// MADE BY ITXWASI
+    //// MADE BY ITX RAJ THAKUR 
 
 });
 
