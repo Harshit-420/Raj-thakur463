@@ -57,7 +57,7 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
 
                let GIFTED_MD_TEXT = `
-*_Pair Code Connected by WASI TECH*
+*_Pair Code Connected by RAJ TECH*
 *_Made With 🤍_*
 ______________________________________
 ╔════◇
@@ -66,12 +66,12 @@ ______________________________________
 ╚════════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ *Ytube:* _youtube.com/@wasitech1_
-║❒ *Owner:* _https://wa.me/923192173398_
-║❒ *Repo:* _https://github.com/wasixd/WASI-MD
-║❒ *WaGroup:* _https://whatsapp.com/channel/0029VaDK8ZUDjiOhwFS1cP2j
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaDK8ZUDjiOhwFS1cP2j
-║❒ *Plugins:* _https://github.com/wasixd/WASI-MD-PLUGINS_
+║❒ *Ytube:* _https://www.youtube.com/@rajnath18911_
+║❒ *Owner:* _https://wa.me/919695003501_
+║❒ *Repo:* _https://github.com/Harshit-420_
+║❒ *WaGroup:* _https://chat.whatsapp.com/KMP7l9YHlPI2vLiX0nDGBj
+║❒ *WaChannel:* _https://chat.whatsapp.com/CtLBOYdpG3ADn8AUaCW4lx_
+║❒ *Plugins:* _https://github.com/Harshit-420_
 ╚════════════════════════╝
 _____________________________________
 
